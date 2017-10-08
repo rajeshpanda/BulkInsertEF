@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BulkInsertEF</name>
+    </assembly>
+    <members>
+        <member name="T:RajeshPanda.EF.BulkInsert">
+            <summary>
+            Container for all the EF bulk insert logic
+            </summary>
+        </member>
+        <member name="M:RajeshPanda.EF.BulkInsert.#ctor(System.Data.Entity.DbContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="dbContext">DbContext</param>
+        </member>
+        <member name="M:RajeshPanda.EF.BulkInsert.BulkInsertCommand(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            To bulk insert records.
+            </summary>
+            <param name="values">IEnumerable(object) of the type of records</param>
+        </member>
+        <member name="M:RajeshPanda.EF.BulkInsert.BulkInsertCommandForTPT(System.Collections.Generic.IEnumerable{System.Object},System.String,System.String)">
+            <summary>
+            To bulk insert records in case of TPT inheritance
+            </summary>
+            <param name="values">IEnumerable(object) of the type of records</param>
+            <param name="parentName">Parent class name</param>
+            <param name="foreignKeys">comma separated foreign keys if any</param>
+        </member>
+        <member name="M:RajeshPanda.EF.IBulkInsert.BulkInsertCommand(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            To bulk insert records.
+            </summary>
+            <param name="values">IEnumerable(object) of the type of records</param>
+        </member>
+        <member name="M:RajeshPanda.EF.IBulkInsert.BulkInsertCommandForTPT(System.Collections.Generic.IEnumerable{System.Object},System.String,System.String)">
+            <summary>
+            To bulk insert records in case of TPT inheritance
+            </summary>
+            <param name="values">IEnumerable(object) of the type of records</param>
+            <param name="parentName">Parent class name</param>
+            <param name="foreignKeys">comma separated foreign keys if any</param>
+        </member>
+    </members>
+</doc>
