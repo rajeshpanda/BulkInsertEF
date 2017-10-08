@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BulkInsertEF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BulkInsertEf.1.1.1\lib\BulkInsertEF.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -57,10 +60,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BulkInsertEF\BulkInsertEF.csproj">
-      <Project>{6A4F9B55-1367-4226-84E0-862E68D32156}</Project>
-      <Name>BulkInsertEF</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LocalDatabase\LocalDatabase.csproj">
       <Project>{63d74589-b321-45a3-8583-714a14362b12}</Project>
       <Name>LocalDatabase</Name>
